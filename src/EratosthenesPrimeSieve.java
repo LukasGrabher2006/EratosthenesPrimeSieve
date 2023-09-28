@@ -40,6 +40,6 @@ public class EratosthenesPrimeSieve implements PrimeSieve{
                 System.out.println(i + " ");
             }
         }
-        System.out.println();git
+        System.out.println();
     }
 }
