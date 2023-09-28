@@ -49,7 +49,10 @@ public class EratosthenesPrimeSieve implements PrimeSieve {
         for (int n = 4; n <= upperbound; n += 2) {
             for (int r = 2; r <= n / 2; r++) {
                 int y = n - r;
-
+                if(main.isPrime(r) && main.isPrime(y)){
+                    result.add(n + " Summe: " + n + " = " + r + " + " + y);
+                    break;
+                }
             }
         }
         return result;
