@@ -42,4 +42,10 @@ public class EratosthenesPrimeSieve implements PrimeSieve{
         }
         System.out.println();
     }
+
+    public static List<String> findPrimSumm(int upperbound){
+        List<String> result = new ArrayList<>();
+
+        return result;
+    }
 }
