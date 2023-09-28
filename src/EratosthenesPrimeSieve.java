@@ -9,6 +9,7 @@ public class EratosthenesPrimeSieve implements PrimeSieve {
 
         main.printPrimes(100);
 
+        List<String> primeSums = findPrimSumm(100);
 
     }
 
