@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class EratosthenesPrimeSieve implements PrimeSieve{
+public class EratosthenesPrimeSieve implements PrimeSieve {
 
     public static EratosthenesPrimeSieve main = new EratosthenesPrimeSieve();
 
@@ -10,8 +10,8 @@ public class EratosthenesPrimeSieve implements PrimeSieve{
         main.printPrimes(100);
 
 
-
     }
+
     @Override
     public boolean isPrime(int p) {
 
@@ -35,17 +35,23 @@ public class EratosthenesPrimeSieve implements PrimeSieve{
 
     @Override
     public void printPrimes(int upperbound) {
-        for(int i = 2;i <= upperbound ;i++){
-            if(isPrime(i)){
+        for (int i = 2; i <= upperbound; i++) {
+            if (isPrime(i)) {
                 System.out.println(i + " ");
             }
         }
         System.out.println();
     }
 
-    public static List<String> findPrimSumm(int upperbound){
+    public static List<String> findPrimSumm(int upperbound) {
         List<String> result = new ArrayList<>();
 
+        for (int n = 4; n <= upperbound; n += 2) {
+            for (int r = 2; r <= n / 2; r++) {
+                int y = n - r;
+
+            }
+        }
         return result;
     }
 }
